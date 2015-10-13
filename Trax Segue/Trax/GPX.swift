@@ -10,7 +10,7 @@
 
 import Foundation
 
-class GPX: NSObject, CustomStringConvertible, NSXMLParserDelegate
+class GPX: NSObject, NSXMLParserDelegate
 {
     // MARK: - Public API
 
@@ -26,7 +26,7 @@ class GPX: NSObject, CustomStringConvertible, NSXMLParserDelegate
     
     // MARK: - Public Classes
     
-    class Track: Entry, CustomStringConvertible
+    class Track: Entry
     {
         var fixes = [Waypoint]()
         
@@ -36,7 +36,7 @@ class GPX: NSObject, CustomStringConvertible, NSXMLParserDelegate
         }
     }
     
-    class Waypoint: Entry, CustomStringConvertible
+    class Waypoint: Entry
     {
         var latitude: Double
         var longitude: Double
@@ -58,7 +58,7 @@ class GPX: NSObject, CustomStringConvertible, NSXMLParserDelegate
         }
     }
     
-    class Entry: NSObject, CustomStringConvertible
+    class Entry: NSObject
     {
         var links = [Link]()
         var attributes = [String:String]()
@@ -171,7 +171,7 @@ class GPX: NSObject, CustomStringConvertible, NSXMLParserDelegate
                 let longitude = (attributeDict["lon"] as! NSString).doubleValue
                 waypoint = Waypoint(latitude: latitude, longitude: longitude)
             case "link":
-                link = Link(href: attributeDict["href"] as! String)
+                link = Link(href: attributeDict["href"] as! String!)
             default: break
         }
     }
