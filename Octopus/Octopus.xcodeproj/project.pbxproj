@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBD17D631BD4D28700C305AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD17D621BD4D28700C305AF /* AppDelegate.swift */; };
+		BBD17D651BD4D28700C305AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD17D641BD4D28700C305AF /* ViewController.swift */; };
+		BBD17D681BD4D28700C305AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD17D661BD4D28700C305AF /* Main.storyboard */; };
+		BBD17D6A1BD4D28700C305AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD17D691BD4D28700C305AF /* Assets.xcassets */; };
+		BBD17D6D1BD4D28700C305AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD17D6B1BD4D28700C305AF /* LaunchScreen.storyboard */; };
+		BBD17D781BD4D28700C305AF /* OctopusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD17D771BD4D28700C305AF /* OctopusTests.swift */; };
+		BBD17D831BD4D28700C305AF /* OctopusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD17D821BD4D28700C305AF /* OctopusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBD17D741BD4D28700C305AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBD17D571BD4D28700C305AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD17D5E1BD4D28700C305AF;
+			remoteInfo = Octopus;
+		};
+		BBD17D7F1BD4D28700C305AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBD17D571BD4D28700C305AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD17D5E1BD4D28700C305AF;
+			remoteInfo = Octopus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBD17D5F1BD4D28700C305AF /* Octopus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octopus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD17D621BD4D28700C305AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBD17D641BD4D28700C305AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BBD17D671BD4D28700C305AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBD17D691BD4D28700C305AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBD17D6C1BD4D28700C305AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBD17D6E1BD4D28700C305AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD17D731BD4D28700C305AF /* OctopusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctopusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD17D771BD4D28700C305AF /* OctopusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctopusTests.swift; sourceTree = "<group>"; };
+		BBD17D791BD4D28700C305AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD17D7E1BD4D28700C305AF /* OctopusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctopusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD17D821BD4D28700C305AF /* OctopusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctopusUITests.swift; sourceTree = "<group>"; };
+		BBD17D841BD4D28700C305AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBD17D5C1BD4D28700C305AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD17D701BD4D28700C305AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD17D7B1BD4D28700C305AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBD17D561BD4D28700C305AF = {
+			isa = PBXGroup;
+			children = (
+				BBD17D611BD4D28700C305AF /* Octopus */,
+				BBD17D761BD4D28700C305AF /* OctopusTests */,
+				BBD17D811BD4D28700C305AF /* OctopusUITests */,
+				BBD17D601BD4D28700C305AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBD17D601BD4D28700C305AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBD17D5F1BD4D28700C305AF /* Octopus.app */,
+				BBD17D731BD4D28700C305AF /* OctopusTests.xctest */,
+				BBD17D7E1BD4D28700C305AF /* OctopusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD17D611BD4D28700C305AF /* Octopus */ = {
+			isa = PBXGroup;
+			children = (
+				BBD17D621BD4D28700C305AF /* AppDelegate.swift */,
+				BBD17D641BD4D28700C305AF /* ViewController.swift */,
+				BBD17D661BD4D28700C305AF /* Main.storyboard */,
+				BBD17D691BD4D28700C305AF /* Assets.xcassets */,
+				BBD17D6B1BD4D28700C305AF /* LaunchScreen.storyboard */,
+				BBD17D6E1BD4D28700C305AF /* Info.plist */,
+			);
+			path = Octopus;
+			sourceTree = "<group>";
+		};
+		BBD17D761BD4D28700C305AF /* OctopusTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBD17D771BD4D28700C305AF /* OctopusTests.swift */,
+				BBD17D791BD4D28700C305AF /* Info.plist */,
+			);
+			path = OctopusTests;
+			sourceTree = "<group>";
+		};
+		BBD17D811BD4D28700C305AF /* OctopusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BBD17D821BD4D28700C305AF /* OctopusUITests.swift */,
+				BBD17D841BD4D28700C305AF /* Info.plist */,
+			);
+			path = OctopusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBD17D5E1BD4D28700C305AF /* Octopus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBD17D871BD4D28700C305AF /* Build configuration list for PBXNativeTarget "Octopus" */;
+			buildPhases = (
+				BBD17D5B1BD4D28700C305AF /* Sources */,
+				BBD17D5C1BD4D28700C305AF /* Frameworks */,
+				BBD17D5D1BD4D28700C305AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Octopus;
+			productName = Octopus;
+			productReference = BBD17D5F1BD4D28700C305AF /* Octopus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBD17D721BD4D28700C305AF /* OctopusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBD17D8A1BD4D28700C305AF /* Build configuration list for PBXNativeTarget "OctopusTests" */;
+			buildPhases = (
+				BBD17D6F1BD4D28700C305AF /* Sources */,
+				BBD17D701BD4D28700C305AF /* Frameworks */,
+				BBD17D711BD4D28700C305AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBD17D751BD4D28700C305AF /* PBXTargetDependency */,
+			);
+			name = OctopusTests;
+			productName = OctopusTests;
+			productReference = BBD17D731BD4D28700C305AF /* OctopusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBD17D7D1BD4D28700C305AF /* OctopusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBD17D8D1BD4D28700C305AF /* Build configuration list for PBXNativeTarget "OctopusUITests" */;
+			buildPhases = (
+				BBD17D7A1BD4D28700C305AF /* Sources */,
+				BBD17D7B1BD4D28700C305AF /* Frameworks */,
+				BBD17D7C1BD4D28700C305AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBD17D801BD4D28700C305AF /* PBXTargetDependency */,
+			);
+			name = OctopusUITests;
+			productName = OctopusUITests;
+			productReference = BBD17D7E1BD4D28700C305AF /* OctopusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBD17D571BD4D28700C305AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Lamb;
+				TargetAttributes = {
+					BBD17D5E1BD4D28700C305AF = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8V9Y9FXYJU;
+					};
+					BBD17D721BD4D28700C305AF = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = BBD17D5E1BD4D28700C305AF;
+					};
+					BBD17D7D1BD4D28700C305AF = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = BBD17D5E1BD4D28700C305AF;
+					};
+				};
+			};
+			buildConfigurationList = BBD17D5A1BD4D28700C305AF /* Build configuration list for PBXProject "Octopus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBD17D561BD4D28700C305AF;
+			productRefGroup = BBD17D601BD4D28700C305AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBD17D5E1BD4D28700C305AF /* Octopus */,
+				BBD17D721BD4D28700C305AF /* OctopusTests */,
+				BBD17D7D1BD4D28700C305AF /* OctopusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBD17D5D1BD4D28700C305AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD17D6D1BD4D28700C305AF /* LaunchScreen.storyboard in Resources */,
+				BBD17D6A1BD4D28700C305AF /* Assets.xcassets in Resources */,
+				BBD17D681BD4D28700C305AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD17D711BD4D28700C305AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD17D7C1BD4D28700C305AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBD17D5B1BD4D28700C305AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD17D651BD4D28700C305AF /* ViewController.swift in Sources */,
+				BBD17D631BD4D28700C305AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD17D6F1BD4D28700C305AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD17D781BD4D28700C305AF /* OctopusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD17D7A1BD4D28700C305AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD17D831BD4D28700C305AF /* OctopusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBD17D751BD4D28700C305AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBD17D5E1BD4D28700C305AF /* Octopus */;
+			targetProxy = BBD17D741BD4D28700C305AF /* PBXContainerItemProxy */;
+		};
+		BBD17D801BD4D28700C305AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBD17D5E1BD4D28700C305AF /* Octopus */;
+			targetProxy = BBD17D7F1BD4D28700C305AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBD17D661BD4D28700C305AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBD17D671BD4D28700C305AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBD17D6B1BD4D28700C305AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBD17D6C1BD4D28700C305AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBD17D851BD4D28700C305AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBD17D861BD4D28700C305AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBD17D881BD4D28700C305AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Octopus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamb.Octopus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBD17D891BD4D28700C305AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Octopus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamb.Octopus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BBD17D8B1BD4D28700C305AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OctopusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamb.OctopusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octopus.app/Octopus";
+			};
+			name = Debug;
+		};
+		BBD17D8C1BD4D28700C305AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OctopusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamb.OctopusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octopus.app/Octopus";
+			};
+			name = Release;
+		};
+		BBD17D8E1BD4D28700C305AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OctopusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamb.OctopusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Octopus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BBD17D8F1BD4D28700C305AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OctopusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lamb.OctopusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Octopus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBD17D5A1BD4D28700C305AF /* Build configuration list for PBXProject "Octopus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD17D851BD4D28700C305AF /* Debug */,
+				BBD17D861BD4D28700C305AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBD17D871BD4D28700C305AF /* Build configuration list for PBXNativeTarget "Octopus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD17D881BD4D28700C305AF /* Debug */,
+				BBD17D891BD4D28700C305AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBD17D8A1BD4D28700C305AF /* Build configuration list for PBXNativeTarget "OctopusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD17D8B1BD4D28700C305AF /* Debug */,
+				BBD17D8C1BD4D28700C305AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBD17D8D1BD4D28700C305AF /* Build configuration list for PBXNativeTarget "OctopusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD17D8E1BD4D28700C305AF /* Debug */,
+				BBD17D8F1BD4D28700C305AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBD17D571BD4D28700C305AF /* Project object */;
+}

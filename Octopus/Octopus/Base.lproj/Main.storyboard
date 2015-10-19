@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp9-90-8ua">
+                                <rect key="frame" x="20" y="360" width="560" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="A0u-Od-c7A"/>
+                                </constraints>
+                                <state key="normal" title="发送"/>
+                                <connections>
+                                    <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUR-cu-vXp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pCb-td-Eoz">
+                                <rect key="frame" x="20" y="40" width="560" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="FnG-xN-i1l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pCb-td-Eoz" secondAttribute="bottom" constant="329" id="Apc-Jn-mtN"/>
+                            <constraint firstItem="pCb-td-Eoz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fdx-RZ-flb"/>
+                            <constraint firstItem="pp9-90-8ua" firstAttribute="top" secondItem="pCb-td-Eoz" secondAttribute="bottom" constant="20" id="TuI-gJ-YY5"/>
+                            <constraint firstItem="pp9-90-8ua" firstAttribute="top" secondItem="pCb-td-Eoz" secondAttribute="bottom" constant="20" id="UZA-7E-gJE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pp9-90-8ua" secondAttribute="leading" id="Wxc-W6-4g1"/>
+                            <constraint firstItem="pCb-td-Eoz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aWS-lg-kze"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pCb-td-Eoz" secondAttribute="trailing" id="bbE-ko-q7Z"/>
+                            <constraint firstItem="pp9-90-8ua" firstAttribute="top" secondItem="pCb-td-Eoz" secondAttribute="bottom" constant="14" id="e7B-Vj-x3t"/>
+                            <constraint firstItem="pCb-td-Eoz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="grZ-Sa-DVo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pCb-td-Eoz" secondAttribute="leading" id="pgV-d9-1jv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pp9-90-8ua" secondAttribute="trailing" id="sd3-pN-pGt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fdx-RZ-flb"/>
+                                <exclude reference="aWS-lg-kze"/>
+                                <exclude reference="UZA-7E-gJE"/>
+                                <exclude reference="e7B-Vj-x3t"/>
+                                <exclude reference="Apc-Jn-mtN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="text" destination="pCb-td-Eoz" id="GTs-y4-oBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="295"/>
+        </scene>
+    </scenes>
+</document>
