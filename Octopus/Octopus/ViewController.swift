@@ -10,7 +10,7 @@ import UIKit
 import MessageUI
 
 class ViewController: UIViewController, UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate {
-
+    
     @IBOutlet weak var text: UITextView!
     
     @IBAction func send(sender: UIButton) {
@@ -36,7 +36,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, MFMessag
         }
     }
     
-    func sendSMS(number: String, content: String){
+    func sendSMS(number: String, content: String) {
         if MFMessageComposeViewController.canSendText(){
             let controller = MFMessageComposeViewController()
             controller.body = content
@@ -69,11 +69,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, MFMessag
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
