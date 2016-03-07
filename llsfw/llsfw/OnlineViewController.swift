@@ -37,6 +37,12 @@ class OnlineViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    @IBAction func signout(sender: UIButton) {
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+        viewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+        self.presentViewController(viewController, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
