@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBB61BF91C8D556300495376 /* OnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB61BF81C8D556300495376 /* OnlineViewController.swift */; };
 		BBCB97991C8D29A000E5771F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB97981C8D29A000E5771F /* AppDelegate.swift */; };
 		BBCB979B1C8D29A000E5771F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB979A1C8D29A000E5771F /* ViewController.swift */; };
 		BBCB979E1C8D29A000E5771F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCB979C1C8D29A000E5771F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BBB61BF81C8D556300495376 /* OnlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineViewController.swift; sourceTree = "<group>"; };
 		BBCB97951C8D29A000E5771F /* llsfw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = llsfw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBCB97981C8D29A000E5771F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBCB979A1C8D29A000E5771F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BBCB97981C8D29A000E5771F /* AppDelegate.swift */,
+				BBB61BF81C8D556300495376 /* OnlineViewController.swift */,
 				BBCB979A1C8D29A000E5771F /* ViewController.swift */,
 				BBCB979C1C8D29A000E5771F /* Main.storyboard */,
 				BBCB979F1C8D29A000E5771F /* Assets.xcassets */,
@@ -135,6 +138,7 @@
 				BBCB97911C8D29A000E5771F /* Sources */,
 				BBCB97921C8D29A000E5771F /* Frameworks */,
 				BBCB97931C8D29A000E5771F /* Resources */,
+				BBCB97C61C8D3C5E00E5771F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,11 +256,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BBCB97C61C8D3C5E00E5771F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BBCB97911C8D29A000E5771F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB61BF91C8D556300495376 /* OnlineViewController.swift in Sources */,
 				BBCB979B1C8D29A000E5771F /* ViewController.swift in Sources */,
 				BBCB97991C8D29A000E5771F /* AppDelegate.swift in Sources */,
 			);
@@ -401,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = llsfw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gm.llsfw;
@@ -413,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = llsfw/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gm.llsfw;
@@ -487,6 +512,7 @@
 				BBCB97BF1C8D29A000E5771F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBCB97C01C8D29A000E5771F /* Build configuration list for PBXNativeTarget "llsfwTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +521,7 @@
 				BBCB97C21C8D29A000E5771F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBCB97C31C8D29A000E5771F /* Build configuration list for PBXNativeTarget "llsfwUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +530,7 @@
 				BBCB97C51C8D29A000E5771F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
