@@ -14,6 +14,7 @@ class OnlineViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet var tableView: UITableView!
     
+    var refreshControl = UIRefreshControl()
     var data: JSON?
     let url = "http://192.168.16.85:8080/llsfw-webdemo/api/ApiPortalController/loadOnlineSecctionData"
     
@@ -43,12 +44,7 @@ class OnlineViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.presentViewController(viewController, animated: true, completion: nil)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        tableView.delegate = self
-        tableView.dataSource = self
-        
+    func refreshData() {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let clientIdentity = userDefaults.stringForKey("clientIdentity")!
         let clientDigest = userDefaults.stringForKey("clientDigest")!
@@ -72,7 +68,20 @@ class OnlineViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
             //self.activityIndicatorView.stopAnimating()
             self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        tableView.delegate = self
+        tableView.dataSource = self
+        refreshControl.addTarget(self, action: "refreshData", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.attributedTitle = NSAttributedString(string: "松开后自动刷新")
+        tableView.addSubview(refreshControl)
+        
+        refreshData()
     }
     
     override func didReceiveMemoryWarning() {
